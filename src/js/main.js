@@ -232,6 +232,8 @@ $(document).ready(function () {
   $("a#is4").click(function () {
     $("a#is4").css("display", "none");
   });
+
+ 
 });
 
 $(".carts").slick({
@@ -415,22 +417,6 @@ $(".iss3").slick({
     },
   ],
 });
-
-var oldScrollY = 0;
-var div = document.getElementById("bottom__block");
-
-window.onscroll = function () {
-  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  var dY = scrolled - oldScrollY;
-
-  if (dY > 0) {
-    div.className = "bottom__block fixed-bottom";
-  } else {
-    div.className = "bottom__block fixed-top";
-  }
-
-  oldScrollY = scrolled;
-};
 
 $(".highslide").click(function () {
   $(".slick.is.slick-slide.slick-active").click();

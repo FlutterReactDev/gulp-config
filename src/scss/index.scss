@@ -2071,7 +2071,16 @@ span {
   background: #fff;
   z-index: 99;
   display: block;
+  transition: 0.5s;
+  transform: translateY(100%);
+  opacity: 0;
+  
 }
+.bottom__block.show {
+  transform: translate(0);
+  opacity: 1;
+}
+
 .bottom__flex {
   padding: 13px 0 13px 0;
   display: flex;

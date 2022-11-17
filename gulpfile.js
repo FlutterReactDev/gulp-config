@@ -71,7 +71,7 @@ function style() {
 }
 
 function libStyles(done) {
-  const plugins = ['src/lib/slick/slick.css','src/lib/slick/slick-theme.css'];
+  const plugins = ['src/lib/slick/slick.css','src/lib/slick/slick-theme.css','node_modules/aos/dist/aos.css'];
   if (plugins.length > 0) {
     return src(plugins)
       .pipe(map.init())
@@ -105,7 +105,7 @@ function devJs() {
 }
 
 function libJs(done) {
-  const plugins = ['src/lib/slick/slick.min.js'];
+  const plugins = ['src/lib/slick/slick.min.js','node_modules/aos/dist/aos.js'];
   if (plugins.length > 0)
     return src(plugins)
       .pipe(map.init())
